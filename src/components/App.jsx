@@ -1,17 +1,12 @@
 import React from "react";
-import Login from "./Login";
-import Input from "./Input";
+import Form from "./Form";
 
-function App() {
-  return (
-    <div className="container">
-      <h1>Hello</h1>
-      <form className="form">
-        <Input />
-        <Login />
-      </form>
-    </div>
-  );
-}
+let userIsRegistered = true;
+
+const App = () => (
+  <div className="container">
+    <Form isRegistered={userIsRegistered} />
+  </div>
+);
 
 export default App;
